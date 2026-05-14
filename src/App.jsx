@@ -448,6 +448,324 @@ const allVideos = [
   { step: 33, phase: "Phase 13", topic: "A2A Protocol", label: "Google ADK & A2A – Google Developers", url: "https://youtube.com/@GoogleDevelopers", color: "#2EC4B6" },
 ];
 
+const projects = [
+  {
+    phase: "Phase 4 — ML",
+    title: "Spam Classifier",
+    desc: "Train a Naive Bayes / Logistic Regression model on email data. Deploy with a simple Streamlit UI.",
+    tags: ["Scikit-learn", "Pandas", "Streamlit"],
+    color: "#FFE66D",
+    difficulty: "Beginner",
+    resources: [
+      { label: "Dataset — SMS Spam Collection", url: "https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset" },
+      { label: "Guide — Text Classification with Sklearn", url: "https://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html" },
+      { label: "Deploy — Streamlit Docs", url: "https://docs.streamlit.io/" },
+    ]
+  },
+  {
+    phase: "Phase 4 — ML",
+    title: "House Price Predictor",
+    desc: "End-to-end regression with EDA, feature engineering, and model comparison. Practice the full ML pipeline.",
+    tags: ["Scikit-learn", "Pandas", "Matplotlib"],
+    color: "#FFE66D",
+    difficulty: "Beginner",
+    resources: [
+      { label: "Dataset — Kaggle House Prices", url: "https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques" },
+      { label: "Guide — EDA with Pandas", url: "https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html" },
+      { label: "Guide — Regression Models Sklearn", url: "https://scikit-learn.org/stable/supervised_learning.html" },
+    ]
+  },
+  {
+    phase: "Phase 4 — ML",
+    title: "Customer Churn Predictor",
+    desc: "Binary classification on telecom data. Practice class imbalance handling, SMOTE, and ROC-AUC evaluation.",
+    tags: ["Scikit-learn", "imbalanced-learn", "Seaborn"],
+    color: "#FFE66D",
+    difficulty: "Beginner",
+    resources: [
+      { label: "Dataset — Telco Customer Churn", url: "https://www.kaggle.com/datasets/blastchar/telco-customer-churn" },
+      { label: "Guide — Handling Imbalanced Data", url: "https://imbalanced-learn.org/stable/user_guide.html" },
+      { label: "Guide — Classification Metrics", url: "https://scikit-learn.org/stable/modules/model_evaluation.html" },
+    ]
+  },
+  {
+    phase: "Phase 4 — ML",
+    title: "Movie Recommendation Engine",
+    desc: "Build a collaborative filtering + content-based hybrid recommender. Use the MovieLens dataset.",
+    tags: ["Scikit-learn", "Pandas", "Surprise"],
+    color: "#FFE66D",
+    difficulty: "Intermediate",
+    resources: [
+      { label: "Dataset — MovieLens", url: "https://grouplens.org/datasets/movielens/" },
+      { label: "Guide — Recommender Systems", url: "https://surprise.readthedocs.io/en/stable/" },
+      { label: "Tutorial — Collaborative Filtering", url: "https://realpython.com/build-recommendation-engine-collaborative-filtering/" },
+    ]
+  },
+  {
+    phase: "Phase 5 — Deep Learning",
+    title: "Handwritten Digit Recognizer",
+    desc: "CNN on MNIST. Build a canvas in the browser where users draw digits and the model predicts in real time.",
+    tags: ["PyTorch", "CNN", "FastAPI", "React"],
+    color: "#C77DFF",
+    difficulty: "Beginner",
+    resources: [
+      { label: "Dataset — MNIST via PyTorch", url: "https://pytorch.org/vision/stable/datasets.html#mnist" },
+      { label: "Guide — CNN in PyTorch", url: "https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html" },
+      { label: "Guide — FastAPI + React integration", url: "https://fastapi.tiangolo.com/tutorial/" },
+    ]
+  },
+  {
+    phase: "Phase 5 — Deep Learning",
+    title: "Sentiment Analysis API",
+    desc: "Fine-tune a small Transformer on movie reviews. Wrap in FastAPI, containerize with Docker, deploy to cloud.",
+    tags: ["PyTorch", "Transformers", "FastAPI", "Docker"],
+    color: "#C77DFF",
+    difficulty: "Intermediate",
+    resources: [
+      { label: "Dataset — IMDB Reviews", url: "https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews" },
+      { label: "Guide — Fine-tuning with HuggingFace", url: "https://huggingface.co/docs/transformers/training" },
+      { label: "Guide — Docker for ML", url: "https://docs.docker.com/guides/use-case/model-inference/" },
+    ]
+  },
+  {
+    phase: "Phase 5 — Deep Learning",
+    title: "Neural Style Transfer",
+    desc: "Transfer the style of a painting onto any photo using VGG19 feature maps. Build an interactive web UI.",
+    tags: ["PyTorch", "VGG19", "Streamlit"],
+    color: "#C77DFF",
+    difficulty: "Intermediate",
+    resources: [
+      { label: "Paper — A Neural Algorithm of Artistic Style", url: "https://arxiv.org/abs/1508.06576" },
+      { label: "Guide — NST in PyTorch", url: "https://pytorch.org/tutorials/advanced/neural_style_tutorial.html" },
+      { label: "Guide — Streamlit Image Apps", url: "https://docs.streamlit.io/develop/api-reference/media" },
+    ]
+  },
+  {
+    phase: "Phase 5 — Deep Learning",
+    title: "Text Generation with LSTM",
+    desc: "Train a character-level LSTM on a book corpus. Generate new text in the style of the original author.",
+    tags: ["PyTorch", "LSTM", "NLP"],
+    color: "#C77DFF",
+    difficulty: "Intermediate",
+    resources: [
+      { label: "Dataset — Project Gutenberg Books", url: "https://www.gutenberg.org/" },
+      { label: "Guide — LSTM Text Generation", url: "https://pytorch.org/tutorials/beginner/nlp/sequence_models_tutorial.html" },
+      { label: "Blog — Karpathy on RNNs", url: "https://karpathy.github.io/2015/05/21/rnn-effectiveness/" },
+    ]
+  },
+  {
+    phase: "Phase 6 — LLMs",
+    title: "LLM Fine-tuning on Custom Data",
+    desc: "Fine-tune Mistral or LLaMA 3 using QLoRA on a domain-specific dataset. Push the adapter to HuggingFace Hub.",
+    tags: ["QLoRA", "HuggingFace", "PEFT", "Unsloth"],
+    color: "#F72585",
+    difficulty: "Advanced",
+    resources: [
+      { label: "Guide — PEFT & LoRA Docs", url: "https://huggingface.co/docs/peft/conceptual_guides/lora" },
+      { label: "Guide — Unsloth Fast Fine-tuning", url: "https://github.com/unslothai/unsloth" },
+      { label: "Guide — HuggingFace Hub Upload", url: "https://huggingface.co/docs/huggingface_hub/guides/upload" },
+      { label: "Dataset — Alpaca Format Guide", url: "https://crfm.stanford.edu/2023/03/13/alpaca.html" },
+    ]
+  },
+  {
+    phase: "Phase 6 — LLMs",
+    title: "Build GPT from Scratch",
+    desc: "Implement a mini GPT in pure PyTorch — tokenizer, attention heads, transformer blocks. Train on Shakespeare.",
+    tags: ["PyTorch", "Transformers", "Tokenizer"],
+    color: "#F72585",
+    difficulty: "Advanced",
+    resources: [
+      { label: "Tutorial — Let's build GPT (Karpathy)", url: "https://youtu.be/kCc8FmEb1nY" },
+      { label: "Paper — Attention Is All You Need", url: "https://arxiv.org/abs/1706.03762" },
+      { label: "Dataset — Shakespeare Corpus", url: "https://raw.githubusercontent.com/karpathy/char-rnn/master/data/tinyshakespeare/input.txt" },
+    ]
+  },
+  {
+    phase: "Phase 7 — Computer Vision",
+    title: "Real-time Object Detector",
+    desc: "YOLO-based object detection on webcam feed. Detect, count, and annotate objects live with bounding boxes.",
+    tags: ["YOLOv8", "OpenCV", "PyTorch"],
+    color: "#06D6A0",
+    difficulty: "Intermediate",
+    resources: [
+      { label: "Guide — Ultralytics YOLOv8 Docs", url: "https://docs.ultralytics.com/" },
+      { label: "Guide — OpenCV Webcam Capture", url: "https://docs.opencv.org/4.x/dd/d43/tutorial_py_video_display.html" },
+      { label: "Dataset — COCO Dataset", url: "https://cocodataset.org/" },
+    ]
+  },
+  {
+    phase: "Phase 7 — Computer Vision",
+    title: "Face Mask Detector",
+    desc: "Binary image classifier to detect mask/no-mask in real time from webcam. Practice transfer learning with MobileNet.",
+    tags: ["PyTorch", "MobileNet", "OpenCV", "Transfer Learning"],
+    color: "#06D6A0",
+    difficulty: "Intermediate",
+    resources: [
+      { label: "Dataset — Face Mask Dataset", url: "https://www.kaggle.com/datasets/omkargurav/face-mask-dataset" },
+      { label: "Guide — Transfer Learning PyTorch", url: "https://pytorch.org/tutorials/beginner/transfer_learning_tutorial.html" },
+      { label: "Guide — OpenCV Real-time Detection", url: "https://docs.opencv.org/4.x/d9/df8/tutorial_root.html" },
+    ]
+  },
+  {
+    phase: "Phase 7 — Computer Vision",
+    title: "Image Segmentation App",
+    desc: "Use Meta's SAM2 to segment any object in an image with a click. Build a Gradio UI to demo it.",
+    tags: ["SAM2", "Meta AI", "Gradio", "PyTorch"],
+    color: "#06D6A0",
+    difficulty: "Advanced",
+    resources: [
+      { label: "Guide — SAM2 GitHub", url: "https://github.com/facebookresearch/segment-anything-2" },
+      { label: "Guide — Gradio Docs", url: "https://www.gradio.app/docs" },
+      { label: "Dataset — COCO Segmentation", url: "https://cocodataset.org/#stuff-2018" },
+    ]
+  },
+  {
+    phase: "Phase 8 — NLP",
+    title: "Named Entity Recognition (NER) System",
+    desc: "Fine-tune BERT for NER on medical or legal text. Extract people, orgs, dates, and custom entities.",
+    tags: ["HuggingFace", "BERT", "spaCy", "Transformers"],
+    color: "#FF9F1C",
+    difficulty: "Intermediate",
+    resources: [
+      { label: "Guide — Token Classification HuggingFace", url: "https://huggingface.co/docs/transformers/tasks/token_classification" },
+      { label: "Dataset — CoNLL-2003 NER", url: "https://huggingface.co/datasets/conll2003" },
+      { label: "Guide — spaCy NER", url: "https://spacy.io/usage/linguistic-features#named-entities" },
+    ]
+  },
+  {
+    phase: "Phase 8 — NLP",
+    title: "News Summarizer",
+    desc: "Use a pre-trained T5 or BART model to summarize news articles. Add URL input that scrapes and summarizes live.",
+    tags: ["HuggingFace", "T5", "BeautifulSoup", "FastAPI"],
+    color: "#FF9F1C",
+    difficulty: "Intermediate",
+    resources: [
+      { label: "Guide — Summarization with HuggingFace", url: "https://huggingface.co/docs/transformers/tasks/summarization" },
+      { label: "Guide — BeautifulSoup Web Scraping", url: "https://www.crummy.com/software/BeautifulSoup/bs4/doc/" },
+      { label: "Dataset — CNN/DailyMail", url: "https://huggingface.co/datasets/cnn_dailymail" },
+    ]
+  },
+  {
+    phase: "Phase 9 — MLOps",
+    title: "Full ML Pipeline with CI/CD",
+    desc: "Complete MLOps project — DVC for data versioning, MLflow for experiment tracking, GitHub Actions for auto-deploy to cloud.",
+    tags: ["DVC", "MLflow", "GitHub Actions", "Docker", "AWS"],
+    color: "#3A86FF",
+    difficulty: "Advanced",
+    resources: [
+      { label: "Guide — DVC Get Started", url: "https://dvc.org/doc/start" },
+      { label: "Guide — MLflow Tracking", url: "https://mlflow.org/docs/latest/tracking.html" },
+      { label: "Guide — GitHub Actions for ML", url: "https://docs.github.com/en/actions/use-cases-and-examples/publishing-packages/publishing-docker-images" },
+      { label: "Course — MLOps Zoomcamp (Free)", url: "https://github.com/DataTalksClub/mlops-zoomcamp" },
+    ]
+  },
+  {
+    phase: "Phase 9 — MLOps",
+    title: "Model Monitoring Dashboard",
+    desc: "Deploy a model and monitor data drift, prediction drift, and performance decay over time using Evidently AI.",
+    tags: ["Evidently AI", "FastAPI", "Docker", "Grafana"],
+    color: "#3A86FF",
+    difficulty: "Advanced",
+    resources: [
+      { label: "Guide — Evidently AI Docs", url: "https://docs.evidentlyai.com/" },
+      { label: "Guide — Grafana Dashboards", url: "https://grafana.com/docs/grafana/latest/getting-started/" },
+      { label: "Tutorial — ML Monitoring Guide", url: "https://www.evidentlyai.com/ml-in-production/ml-monitoring" },
+    ]
+  },
+  {
+    phase: "Phase 10 — GenAI",
+    title: "RAG Chatbot on Your Docs",
+    desc: "Upload PDFs, chunk and embed them into ChromaDB, query with LangChain. Add streaming chat UI with source citations.",
+    tags: ["LangChain", "ChromaDB", "FastAPI", "React"],
+    color: "#FF6B6B",
+    difficulty: "Intermediate",
+    resources: [
+      { label: "Guide — LangChain RAG Tutorial", url: "https://python.langchain.com/docs/tutorials/rag/" },
+      { label: "Guide — ChromaDB Docs", url: "https://docs.trychroma.com/getting-started" },
+      { label: "Guide — PDF Loader LangChain", url: "https://python.langchain.com/docs/how_to/document_loader_pdf/" },
+      { label: "Guide — Streaming with FastAPI", url: "https://fastapi.tiangolo.com/advanced/custom-response/#streamingresponse" },
+    ]
+  },
+  {
+    phase: "Phase 10 — GenAI",
+    title: "AI Agent with Tool Calling",
+    desc: "Build an agent that can search the web, run Python code, and read files autonomously. Add memory between sessions.",
+    tags: ["LangChain", "Agents", "Async", "Tools"],
+    color: "#FF6B6B",
+    difficulty: "Advanced",
+    resources: [
+      { label: "Guide — LangChain Agents", url: "https://python.langchain.com/docs/concepts/agents/" },
+      { label: "Guide — Tool Calling", url: "https://python.langchain.com/docs/concepts/tool_calling/" },
+      { label: "Guide — Agent Memory", url: "https://python.langchain.com/docs/concepts/memory/" },
+    ]
+  },
+  {
+    phase: "Phase 10 — GenAI",
+    title: "Graph RAG Knowledge Base",
+    desc: "Build a knowledge graph from documents using Neo4j. Query it with natural language via Graph RAG for multi-hop reasoning.",
+    tags: ["Neo4j", "GraphRAG", "LangChain", "LLM"],
+    color: "#FF6B6B",
+    difficulty: "Advanced",
+    resources: [
+      { label: "Guide — Microsoft GraphRAG", url: "https://microsoft.github.io/graphrag/" },
+      { label: "Guide — Neo4j + LangChain", url: "https://python.langchain.com/docs/integrations/graphs/neo4j_cypher/" },
+      { label: "Guide — Neo4j Graph DB Docs", url: "https://neo4j.com/docs/" },
+    ]
+  },
+  {
+    phase: "Phase 11 — Multimodal",
+    title: "Visual Question Answering App",
+    desc: "Upload an image and ask questions about it in natural language. Use LLaVA or Gemini Vision API under the hood.",
+    tags: ["LLaVA", "Gemini API", "Gradio", "Multimodal"],
+    color: "#7B2FBE",
+    difficulty: "Advanced",
+    resources: [
+      { label: "Guide — Google Gemini Vision", url: "https://ai.google.dev/gemini-api/docs/vision" },
+      { label: "Guide — LLaVA on HuggingFace", url: "https://huggingface.co/docs/transformers/model_doc/llava" },
+      { label: "Guide — Gradio Image Input", url: "https://www.gradio.app/docs/gradio/image" },
+    ]
+  },
+  {
+    phase: "Phase 11 — Multimodal",
+    title: "AI Image Caption Generator",
+    desc: "Generate descriptive captions for any image using BLIP-2 or Florence-2. Build a drag-and-drop web interface.",
+    tags: ["BLIP-2", "Florence-2", "HuggingFace", "FastAPI"],
+    color: "#7B2FBE",
+    difficulty: "Intermediate",
+    resources: [
+      { label: "Guide — BLIP-2 HuggingFace", url: "https://huggingface.co/docs/transformers/model_doc/blip-2" },
+      { label: "Guide — Florence-2 by Microsoft", url: "https://huggingface.co/microsoft/Florence-2-large" },
+      { label: "Guide — Image Pipelines HuggingFace", url: "https://huggingface.co/docs/transformers/pipeline_tutorial" },
+    ]
+  },
+  {
+    phase: "Phase 13 — MCP & A2A",
+    title: "Custom MCP Server",
+    desc: "Build a custom MCP server that exposes tools — file reader, web search, code runner. Connect it to Claude Desktop.",
+    tags: ["MCP", "Claude API", "Python", "Async"],
+    color: "#2EC4B6",
+    difficulty: "Advanced",
+    resources: [
+      { label: "Guide — MCP Official Docs", url: "https://modelcontextprotocol.io/introduction" },
+      { label: "Guide — Building MCP Servers", url: "https://modelcontextprotocol.io/quickstart/server" },
+      { label: "Guide — Anthropic MCP Guide", url: "https://docs.anthropic.com/en/docs/agents-and-tools/mcp" },
+    ]
+  },
+  {
+    phase: "Phase 13 — MCP & A2A",
+    title: "Multi-Agent A2A System",
+    desc: "Build two specialized agents that communicate via the A2A protocol — one for research, one for writing. Orchestrate with Google ADK.",
+    tags: ["A2A", "Google ADK", "LangChain", "Async"],
+    color: "#2EC4B6",
+    difficulty: "Advanced",
+    resources: [
+      { label: "Guide — A2A Protocol Spec", url: "https://google.github.io/A2A/" },
+      { label: "Guide — Google ADK Docs", url: "https://google.github.io/adk-docs/" },
+      { label: "Guide — Multi-Agent Systems", url: "https://python.langchain.com/docs/concepts/multi_agent/" },
+    ]
+  },
+];
+
 export default function App() {
   const [view, setView] = useState("phase");
   const [expanded, setExpanded] = useState(null);
@@ -507,6 +825,7 @@ export default function App() {
             )}
           </div>
         ))}
+        
 
         {/* VIDEO VIEW */}
         {view === "video" && (() => {
@@ -536,12 +855,108 @@ export default function App() {
               ))}
             </div>
           );
+
+          
         })()}
 
+        {/* PROJECTS SECTION */}
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "16px" }}>
+          {projects.map((p, i) => (
+            <div key={i} style={{
+              background: "rgba(255,255,255,0.02)",
+              border: `1px solid ${p.color}22`,
+              borderRadius: "16px",
+              padding: "22px",
+              transition: "background 0.2s, border-color 0.2s",
+              position: "relative",
+              overflow: "hidden",
+              display: "flex",
+              flexDirection: "column",
+              gap: "12px",
+            }}
+              onMouseEnter={e => { e.currentTarget.style.background = "rgba(255,255,255,0.05)"; e.currentTarget.style.borderColor = p.color + "55"; }}
+              onMouseLeave={e => { e.currentTarget.style.background = "rgba(255,255,255,0.02)"; e.currentTarget.style.borderColor = p.color + "22"; }}
+            >
+              {/* Top accent bar */}
+              <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: "2px", background: p.color, opacity: 0.6 }} />
+
+              {/* Phase + Difficulty */}
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "9px", letterSpacing: "2px", textTransform: "uppercase", color: p.color, opacity: 0.8 }}>
+                  {p.phase}
+                </div>
+                <span style={{
+                  fontFamily: "'JetBrains Mono', monospace",
+                  fontSize: "9px",
+                  padding: "3px 8px",
+                  borderRadius: "5px",
+                  letterSpacing: "1px",
+                  background: p.difficulty === "Beginner" ? "rgba(6,214,160,0.12)" : p.difficulty === "Intermediate" ? "rgba(255,159,28,0.12)" : "rgba(247,37,133,0.12)",
+                  border: `1px solid ${p.difficulty === "Beginner" ? "rgba(6,214,160,0.3)" : p.difficulty === "Intermediate" ? "rgba(255,159,28,0.3)" : "rgba(247,37,133,0.3)"}`,
+                  color: p.difficulty === "Beginner" ? "#06D6A0" : p.difficulty === "Intermediate" ? "#FF9F1C" : "#F72585",
+                }}>
+                  {p.difficulty}
+                </span>
+              </div>
+
+              {/* Title + Desc */}
+              <div>
+                <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: "18px", fontWeight: 700, color: "#f0ede8", marginBottom: "8px" }}>
+                  {p.title}
+                </h3>
+                <p style={{ fontFamily: "'Crimson Pro', serif", fontSize: "15px", color: "#7a7570", lineHeight: 1.6 }}>
+                  {p.desc}
+                </p>
+              </div>
+
+              {/* Tags */}
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "6px" }}>
+                {p.tags.map((tag, ti) => (
+                  <span key={ti} style={{
+                    fontFamily: "'JetBrains Mono', monospace",
+                    fontSize: "10px",
+                    padding: "3px 9px",
+                    borderRadius: "6px",
+                    background: p.color + "15",
+                    border: `1px solid ${p.color}30`,
+                    color: p.color,
+                    letterSpacing: "0.5px",
+                  }}>
+                    {tag}
+                  </span>
+                ))}
+              </div>
+
+              {/* Resources */}
+              <div style={{ borderTop: "1px solid rgba(255,255,255,0.06)", paddingTop: "12px", display: "flex", flexDirection: "column", gap: "6px" }}>
+                <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "9px", letterSpacing: "2px", textTransform: "uppercase", color: "#4a4540", marginBottom: "4px" }}>
+                  Resources
+                </div>
+                {p.resources.map((r, ri) => (
+                  <a key={ri} href={r.url} target="_blank" rel="noopener noreferrer" style={{
+                    fontFamily: "'Crimson Pro', serif",
+                    fontSize: "14px",
+                    color: "#6a6560",
+                    textDecoration: "none",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "6px",
+                    transition: "color 0.15s",
+                  }}
+                    onMouseEnter={e => e.currentTarget.style.color = p.color}
+                    onMouseLeave={e => e.currentTarget.style.color = "#6a6560"}
+                  >
+                    <span style={{ color: p.color, fontSize: "10px", flexShrink: 0 }}>→</span>
+                    {r.label}
+                  </a>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
 
       <div className="footer">
-        <p className="footer-text">Built for those who want to go from zero to <span>demigod</span>. No shortcuts.</p>
         <p className="footer-text">Built for those who want to go from zero to <span>demigod</span>. No shortcuts.</p>
   
         <div style={{ display: "flex", justifyContent: "center", gap: "12px", marginTop: "24px", flexWrap: "wrap" }}>
