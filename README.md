@@ -17,7 +17,7 @@
 > *Every resource you need, in exact order — videos and documentation, phase by phase.*
 
 **[🚀 Live Site →](https://ai-roadmap-pearl.vercel.app)**
-
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/3d68902b-035e-42d8-8ea4-3204e2d0f357" />
 ---
 
 </div>
