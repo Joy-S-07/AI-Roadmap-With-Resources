@@ -56,7 +56,10 @@ Phase 13 ── MCP & A2A Protocols          → Model Context Protocol, Agent-t
 
 <div align="center">
 <br/>
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=14&duration=2000&pause=500&color=4ECDC4&center=true&vCenter=true&multiline=true&width=600&height=50&lines=Math+→+Python+→+ML+→+DL+→+LLMs+→+CV+→+NLP+→+MLOps+→+GenAI+→+Profit" alt="Flow" />
+<img width="620" height="750" alt="ai_roadmap_site_architecture" src="https://github.com/user-attachments/assets/706da3cc-8069-4458-9b72-f5e52cc94df2" />
+<svg width="100%" viewBox="0 0 680 820" role="img" style="" xmlns="http://www.w3.org/2000/svg">
+  
+</svg>
 <br/><br/>
 </div>
 
