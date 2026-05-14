@@ -42,7 +42,7 @@ const phases = [
       {
         name: "Python Programming",
         resources: [
-          { type: "video", label: "Python Full Course – Sheryians", url: "https://youtube.com/playlist?list=PLaldQ9PzZd9qT0KsKJ7yCq70iFFP3MFJ5" },
+          { type: "video", label: "Python Full Course – Code with Harry", url: "https://youtu.be/UrsmFxEIp5k?si=5SR_AMBVUCaFo8Zv" },
           { type: "doc", label: "Python Official Docs", url: "https://docs.python.org/3/" },
           { type: "doc", label: "Real Python Tutorials", url: "https://realpython.com/" },
         ]
@@ -50,21 +50,21 @@ const phases = [
       {
         name: "NumPy",
         resources: [
-          { type: "video", label: "NumPy Full Course – Sheryians", url: "https://youtube.com/playlist?list=PLaldQ9PzZd9qT0KsKJ7yCq70iFFP3MFJ5" },
+          { type: "video", label: "NumPy Full Course – Sheryians", url: "https://youtu.be/Utgwk0r9Zq4?si=HnsOTMBlIliGI4L4" },
           { type: "doc", label: "NumPy Official Docs", url: "https://numpy.org/doc/stable/" },
         ]
       },
       {
         name: "Pandas",
         resources: [
-          { type: "video", label: "Pandas – Sheryians", url: "https://youtube.com/playlist?list=PLaldQ9PzZd9qT0KsKJ7yCq70iFFP3MFJ5" },
+          { type: "video", label: "Pandas – Sheryians", url: "https://youtu.be/QUaSmqBeR9w?si=K9LQ1SniuXngNaGj" },
           { type: "doc", label: "Pandas Official Docs", url: "https://pandas.pydata.org/docs/" },
         ]
       },
       {
         name: "Matplotlib & Seaborn",
         resources: [
-          { type: "video", label: "Data Visualization – Sheryians", url: "https://youtube.com/playlist?list=PLaldQ9PzZd9qT0KsKJ7yCq70iFFP3MFJ5" },
+          { type: "video", label: "Data Visualization – Sheryians", url: "https://youtu.be/-jTD74eEy2I?si=OKs-92r2ePaDB6Gf" },
           { type: "doc", label: "Matplotlib Docs", url: "https://matplotlib.org/stable/" },
           { type: "doc", label: "Seaborn Docs", url: "https://seaborn.pydata.org/" },
         ]
@@ -99,7 +99,7 @@ const phases = [
       {
         name: "ML Theory (All Algorithms)",
         resources: [
-          { type: "video", label: "ML Complete Course Parts 1–4 – Sheryians", url: "https://youtube.com/playlist?list=PLaldQ9PzZd9qRfmaHF1SB7E_vDHuYs--f" },
+          { type: "video", label: "ML Complete Course Parts 1–4 – Sheryians", url: "https://youtube.com/playlist?list=PLaldQ9PzZd9qT0KsKJ7yCq70iFFP3MFJ5&si=Zs0jHcLl1PTpECAi" },
           { type: "doc", label: "Scikit-learn Docs", url: "https://scikit-learn.org/stable/" },
           { type: "doc", label: "Google ML Crash Course", url: "https://developers.google.com/machine-learning/crash-course" },
         ]
@@ -107,7 +107,7 @@ const phases = [
       {
         name: "Kaggle Practice (1–2 months)",
         resources: [
-          { type: "video", label: "Kaggle for Beginners – Abhishek Thakur", url: "https://youtube.com/c/AbhishekThakurAbhi" },
+          { type: "video", label: "Kaggle for Beginners – Abhishek Thakur", url: "https://youtube.com/playlist?list=PL98nY_tJQXZnP-k3qCDd1hljVSciDV9_N&si=SVb0jExOHSkWGPAa" },
           { type: "doc", label: "Kaggle Learn", url: "https://www.kaggle.com/learn" },
           { type: "doc", label: "Kaggle Competitions", url: "https://www.kaggle.com/competitions" },
         ]
@@ -132,28 +132,28 @@ const phases = [
       {
         name: "Neural Networks & Deep Learning Theory",
         resources: [
-          { type: "video", label: "DL Part 1 – Sheryians", url: "https://youtube.com/playlist?list=PLaldQ9PzZd9oXR4PMGR4pr_DX4wFHkFwR" },
+          { type: "video", label: "DL Part 1 – Sheryians", url: "https://youtu.be/losbBdEjyN4?si=B7BT4NXkQF4QvxGk" },
           { type: "doc", label: "fast.ai Practical DL", url: "https://course.fast.ai/" },
         ]
       },
       {
         name: "CNN (Convolutional Neural Networks)",
         resources: [
-          { type: "video", label: "DL Part 2 – Sheryians", url: "https://youtube.com/playlist?list=PLaldQ9PzZd9oXR4PMGR4pr_DX4wFHkFwR" },
+          { type: "video", label: "DL Part 2 – Sheryians", url: "https://youtu.be/dh3ilHzIRd0?si=FLTIfRYr9IlLgv_N" },
           { type: "doc", label: "Stanford CS231n Notes", url: "https://cs231n.github.io/" },
         ]
       },
       {
         name: "RNN, LSTM, GRU",
         resources: [
-          { type: "video", label: "DL Part 3 – Sheryians", url: "https://youtube.com/playlist?list=PLaldQ9PzZd9oXR4PMGR4pr_DX4wFHkFwR" },
+          { type: "video", label: "DL Part 3 – Sheryians", url: "https://youtu.be/0Q4yhrkwn7c?si=CaSYi1C4rc2cRUHV" },
           { type: "doc", label: "Understanding LSTM – Colah's Blog", url: "https://colah.github.io/posts/2015-08-Understanding-LSTMs/" },
         ]
       },
       {
         name: "Transformers & Attention Mechanism",
         resources: [
-          { type: "video", label: "DL Part 4 – Sheryians", url: "https://youtube.com/playlist?list=PLaldQ9PzZd9oXR4PMGR4pr_DX4wFHkFwR" },
+          { type: "video", label: "DL Part 4 – Sheryians", url: "https://youtu.be/i2tlbIGyzKk?si=JHthMB13ZkiHtfp-" },
           { type: "video", label: "Attention is All You Need Explained – Yannic Kilcher", url: "https://youtu.be/iDulhoQ2pro" },
           { type: "doc", label: "The Annotated Transformer", url: "https://nlp.seas.harvard.edu/annotated-transformer/" },
         ]
@@ -179,7 +179,7 @@ const phases = [
       {
         name: "LLM Architecture & How They Work",
         resources: [
-          { type: "video", label: "GenAI Part 1 – Sheryians", url: "https://youtube.com/playlist?list=PLaldQ9PzZd9oXR4PMGR4pr_DX4wFHkFwR" },
+          { type: "video", label: "GenAI Part 1 – Sheryians", url: "https://youtu.be/vwncYfhxbR0?si=G-bUczBmn_xa0ETS" },
           { type: "video", label: "Intro to LLMs – Andrej Karpathy", url: "https://youtu.be/zjkBMFhNj_g" },
           { type: "doc", label: "HuggingFace NLP Course", url: "https://huggingface.co/learn/nlp-course" },
         ]
@@ -187,7 +187,7 @@ const phases = [
       {
         name: "Fine-tuning LLMs (LoRA, QLoRA)",
         resources: [
-          { type: "video", label: "LLM Fine-Tuning Playlist – Krish Naik", url: "https://youtube.com/@krishnaik06" },
+          { type: "video", label: "LLM Fine-Tuning Playlist – Krish Naik", url: "https://youtube.com/playlist?list=PLZoTAELRMXVN9VbAx5I2VvloTtYmlApe3&si=oPR5p_L5nyizeh_I" },
           { type: "video", label: "Fine-tuning with Unsloth – 1littlecoder", url: "https://youtube.com/@1littlecoder" },
           { type: "doc", label: "HuggingFace PEFT Docs", url: "https://huggingface.co/docs/peft" },
           { type: "doc", label: "Unsloth GitHub", url: "https://github.com/unslothai/unsloth" },
@@ -212,7 +212,7 @@ const phases = [
       {
         name: "Object Detection (YOLO, R-CNN)",
         resources: [
-          { type: "video", label: "Computer Vision Playlist – Krish Naik", url: "https://youtube.com/@krishnaik06" },
+          { type: "video", label: "Computer Vision Playlist – Krish Naik", url: "https://youtube.com/playlist?list=PLZoTAELRMXVOIBRx0andphYJ7iakSg3Lk&si=_UdFUj50EnJq6zyG" },
           { type: "video", label: "PyTorch for DL + CV – Daniel Bourke", url: "https://youtu.be/Z_ikDlimN6A" },
           { type: "doc", label: "Ultralytics YOLO Docs", url: "https://docs.ultralytics.com/" },
           { type: "doc", label: "Detectron2 Docs", url: "https://detectron2.readthedocs.io/" },
@@ -238,8 +238,8 @@ const phases = [
       {
         name: "NLP with ML Models",
         resources: [
-          { type: "video", label: "NLP – Sheryians", url: "https://youtube.com/playlist?list=PLaldQ9PzZd9qRfmaHF1SB7E_vDHuYs--f" },
-          { type: "video", label: "Stanford CS224N – NLP with DL", url: "https://youtube.com/playlist?list=PLoROMvodv4rMFqRtEuo6zgCd5kd7JsZwm" },
+          { type: "video", label: "NLP – Sheryians", url: "https://youtu.be/yiNS_Sh9KDA?si=3mn3k9ADT2JxsdiJ" },
+          { type: "video", label: "Stanford CS224N – NLP with DL", url: "https://youtube.com/playlist?list=PLoROMvodv4rOaMFbaqxPDoLWjDaRAdP9D&si=vbgbqJKD0xJWa3_6" },
           { type: "doc", label: "HuggingFace Transformers Docs", url: "https://huggingface.co/docs/transformers" },
           { type: "doc", label: "NLTK Docs", url: "https://www.nltk.org/" },
           { type: "doc", label: "spaCy Docs", url: "https://spacy.io/api/doc" },
@@ -257,21 +257,21 @@ const phases = [
       {
         name: "FastAPI",
         resources: [
-          { type: "video", label: "FastAPI Full Course – Krish Naik", url: "https://youtube.com/@krishnaik06" },
+          { type: "video", label: "FastAPI Full Course – Sheryians", url: "https://youtu.be/YxT0K5oEehk?si=BvLvS7WLq3PRPQcc" },
           { type: "doc", label: "FastAPI Official Docs", url: "https://fastapi.tiangolo.com/" },
         ]
       },
       {
         name: "Docker",
         resources: [
-          { type: "video", label: "Docker for Beginners – TechWorld with Nana", url: "https://youtu.be/3c-iBn73dDE" },
+          { type: "video", label: "Docker for Beginners – Apna College", url: "https://youtu.be/exmSJpJvIPs?si=I41M7Ln4cRmydFbb" },
           { type: "doc", label: "Docker Official Docs", url: "https://docs.docker.com/" },
         ]
       },
       {
         name: "GitHub CI/CD",
         resources: [
-          { type: "video", label: "GitHub Actions – TechWorld with Nana", url: "https://youtube.com/@TechWorldwithNana" },
+          { type: "video", label: "GitHub Actions – Piyush Garg", url: "https://youtu.be/y7S2oSjJ8PA?si=uKETjpPnu33KVrJR" },
           { type: "doc", label: "GitHub Actions Docs", url: "https://docs.github.com/en/actions" },
         ]
       },
@@ -285,7 +285,7 @@ const phases = [
       {
         name: "MLflow (Experiment Tracking)",
         resources: [
-          { type: "video", label: "MLflow – Krish Naik", url: "https://youtube.com/@krishnaik06" },
+          { type: "video", label: "MLflow – Krish Naik", url: "https://youtu.be/p1bfK8ZJgkE?si=3ehpLgiuGLAsXWDl" },
           { type: "doc", label: "MLflow Docs", url: "https://mlflow.org/docs/latest/index.html" },
         ]
       },
@@ -310,8 +310,8 @@ const phases = [
       {
         name: "RAG Basics & LangChain",
         resources: [
-          { type: "video", label: "GenAI Part 2 – Sheryians", url: "https://youtube.com/playlist?list=PLaldQ9PzZd9oXR4PMGR4pr_DX4wFHkFwR" },
-          { type: "video", label: "LangChain Full Course – CampusX", url: "https://youtube.com/@campusx-official" },
+          { type: "video", label: "GenAI Part 2 – Sheryians", url: "https://youtu.be/yodh-oEFnb4?si=6hAYVwtv8Hk2ziBu" },
+          { type: "video", label: "LangChain Full Course – CampusX", url: "https://youtube.com/playlist?list=PLKnIA16_RmvaTbihpo4MtzVm4XOQa0ER0&si=F3-mbxe04heMdp_a" },
           { type: "doc", label: "LangChain Docs", url: "https://python.langchain.com/docs/introduction/" },
           { type: "doc", label: "LlamaIndex Docs", url: "https://docs.llamaindex.ai/" },
         ]
@@ -319,7 +319,7 @@ const phases = [
       {
         name: "Agents & Tool Calling",
         resources: [
-          { type: "video", label: "GenAI Part 3 – Sheryians", url: "https://youtube.com/playlist?list=PLaldQ9PzZd9oXR4PMGR4pr_DX4wFHkFwR" },
+          { type: "video", label: "GenAI Part 3 – Sheryians", url: "https://youtu.be/CUDT5E6jz84?si=d1x5MIr--zH5HCAZ" },
           { type: "doc", label: "LangChain Agents Docs", url: "https://python.langchain.com/docs/concepts/agents/" },
           { type: "doc", label: "OpenAI Function Calling", url: "https://platform.openai.com/docs/guides/function-calling" },
         ]
@@ -327,7 +327,7 @@ const phases = [
       {
         name: "Graph RAG",
         resources: [
-          { type: "video", label: "Graph RAG – Microsoft Research", url: "https://youtube.com/@MicrosoftResearch" },
+          { type: "video", label: "Graph RAG – Codeverra", url: "https://youtu.be/iNpc5_8irgo?si=YO1Nu8g840uL_IbJ" },
           { type: "doc", label: "GraphRAG Docs – Microsoft", url: "https://microsoft.github.io/graphrag/" },
           { type: "doc", label: "Neo4j Graph RAG Guide", url: "https://neo4j.com/developer-blog/graph-rag/" },
         ]
@@ -335,7 +335,7 @@ const phases = [
       {
         name: "Multi-hop RAG",
         resources: [
-          { type: "video", label: "Advanced RAG – CampusX", url: "https://youtube.com/@campusx-official" },
+          { type: "video", label: "Advanced RAG – CampusX", url: "https://youtu.be/41XDn81nR5c?si=U1tX97KxOLqB40Fs" },
           { type: "doc", label: "Advanced RAG Techniques", url: "https://towardsdatascience.com/advanced-rag-techniques-an-illustrated-overview-04d193d8fec6" },
         ]
       },
@@ -378,7 +378,7 @@ const phases = [
       {
         name: "Async / Await in Python",
         resources: [
-          { type: "video", label: "Async Python – Tech With Tim", url: "https://youtu.be/t5Bo1Je9EmE" },
+          { type: "video", label: "Async Python – Code With Harry", url: "https://youtu.be/lgoB3_-ejnI?si=V0aU9zMEwa0WI3vn" },
           { type: "doc", label: "Python asyncio Docs", url: "https://docs.python.org/3/library/asyncio.html" },
           { type: "doc", label: "Real Python – Async IO", url: "https://realpython.com/async-io-python/" },
         ]
@@ -395,7 +395,7 @@ const phases = [
       {
         name: "MCP (Model Context Protocol)",
         resources: [
-          { type: "video", label: "MCP Tutorial – Krish Naik", url: "https://youtube.com/@krishnaik06" },
+          { type: "video", label: "MCP Tutorial – Krish Naik", url: "https://youtube.com/playlist?list=PLKnIA16_Rmva_oZ9F4ayUu9qcWgF7Fyc0&si=fG5nEipFNsF5JDNm" },
           { type: "doc", label: "MCP Official Docs", url: "https://modelcontextprotocol.io/introduction" },
           { type: "doc", label: "Anthropic MCP Guide", url: "https://docs.anthropic.com/en/docs/agents-and-tools/mcp" },
         ]
@@ -403,7 +403,7 @@ const phases = [
       {
         name: "A2A (Agent-to-Agent Protocol)",
         resources: [
-          { type: "video", label: "Google ADK & A2A – Google AI", url: "https://youtube.com/@GoogleDevelopers" },
+          { type: "video", label: "Google ADK & A2A – Google AI", url: "https://youtube.com/playlist?list=PL6tW9BrhiPTAZts0W5nQS9dbW6VMnLKab&si=2iACpI4XKe9WzoBD" },
           { type: "doc", label: "A2A Protocol Spec", url: "https://google.github.io/A2A/" },
           { type: "doc", label: "Google ADK Docs", url: "https://google.github.io/adk-docs/" },
         ]
@@ -412,41 +412,28 @@ const phases = [
   },
 ];
 
-const allVideos = [
-  { step: 1, phase: "Phase 1", topic: "Statistics & Probability", label: "Complete Statistics for ML – Sheryians", url: "https://youtu.be/eF7HoC-cLRM?si=I7ff3rqqNUSGdIje", color: "#FF6B35" },
-  { step: 2, phase: "Phase 1", topic: "Linear Algebra", label: "Essence of Linear Algebra – 3Blue1Brown", url: "https://youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab", color: "#FF6B35" },
-  { step: 3, phase: "Phase 1", topic: "Calculus", label: "Essence of Calculus – 3Blue1Brown", url: "https://youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr", color: "#FF6B35" },
-  { step: 4, phase: "Phase 2", topic: "Python + Libraries", label: "Python + NumPy + Pandas + Viz – Sheryians", url: "https://youtube.com/playlist?list=PLaldQ9PzZd9qT0KsKJ7yCq70iFFP3MFJ5", color: "#4ECDC4" },
-  { step: 5, phase: "Phase 3", topic: "SQL", label: "Complete SQL in 1 Shot – Sheryians", url: "https://youtu.be/p1epCuYb5OQ?si=5rI6wAD6aXI3zm-A", color: "#A8DADC" },
-  { step: 6, phase: "Phase 4", topic: "Machine Learning", label: "ML Complete Course Parts 1–4 – Sheryians", url: "https://youtube.com/playlist?list=PLaldQ9PzZd9qRfmaHF1SB7E_vDHuYs--f", color: "#FFE66D" },
-  { step: 7, phase: "Phase 4", topic: "Kaggle Practice", label: "Kaggle for Beginners – Abhishek Thakur", url: "https://youtube.com/@AbhishekThakurAbhi", color: "#FFE66D" },
-  { step: 8, phase: "Phase 5", topic: "DL Math (Backprop)", label: "Neural Networks – 3Blue1Brown", url: "https://youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi", color: "#C77DFF" },
-  { step: 9, phase: "Phase 5", topic: "DL Theory (backprop intuition)", label: "micrograd – Andrej Karpathy", url: "https://youtu.be/VMj-3S1tku0", color: "#C77DFF" },
-  { step: 10, phase: "Phase 5", topic: "Deep Learning Parts 1–4", label: "DL Complete – Sheryians", url: "https://youtube.com/playlist?list=PLaldQ9PzZd9oXR4PMGR4pr_DX4wFHkFwR", color: "#C77DFF" },
-  { step: 11, phase: "Phase 5", topic: "PyTorch Framework", label: "PyTorch Full Course – freeCodeCamp", url: "https://youtu.be/V_xro1bcAuA", color: "#C77DFF" },
-  { step: 12, phase: "Phase 5", topic: "Build GPT from Scratch", label: "Let's build GPT – Andrej Karpathy", url: "https://youtu.be/kCc8FmEb1nY", color: "#C77DFF" },
-  { step: 13, phase: "Phase 6", topic: "LLM Architecture", label: "Intro to LLMs – Andrej Karpathy", url: "https://youtu.be/zjkBMFhNj_g", color: "#F72585" },
-  { step: 14, phase: "Phase 6", topic: "GenAI Part 1 – LLM Fundamentals", label: "GenAI Part 1 – Sheryians", url: "https://youtube.com/playlist?list=PLaldQ9PzZd9oXR4PMGR4pr_DX4wFHkFwR", color: "#F72585" },
-  { step: 15, phase: "Phase 6", topic: "Fine-Tuning LLMs", label: "LLM Fine-Tuning Playlist – Krish Naik", url: "https://youtube.com/@krishnaik06", color: "#F72585" },
-  { step: 16, phase: "Phase 7", topic: "OpenCV Basics", label: "OpenCV Python – freeCodeCamp", url: "https://youtu.be/oXlwWbU8l2o", color: "#06D6A0" },
-  { step: 17, phase: "Phase 7", topic: "Object Detection + Segmentation", label: "Computer Vision – Krish Naik", url: "https://youtube.com/@krishnaik06", color: "#06D6A0" },
-  { step: 18, phase: "Phase 7", topic: "CV with PyTorch", label: "PyTorch for DL + CV – Daniel Bourke", url: "https://youtu.be/Z_ikDlimN6A", color: "#06D6A0" },
-  { step: 19, phase: "Phase 8", topic: "NLP Full Course", label: "NLP – Sheryians", url: "https://youtube.com/playlist?list=PLaldQ9PzZd9qRfmaHF1SB7E_vDHuYs--f", color: "#FF9F1C" },
-  { step: 20, phase: "Phase 8", topic: "NLP with Deep Learning", label: "Stanford CS224N", url: "https://youtube.com/playlist?list=PLoROMvodv4rMFqRtEuo6zgCd5kd7JsZwm", color: "#FF9F1C" },
-  { step: 21, phase: "Phase 9", topic: "FastAPI", label: "FastAPI Full Course – Krish Naik", url: "https://youtube.com/@krishnaik06", color: "#3A86FF" },
-  { step: 22, phase: "Phase 9", topic: "Docker", label: "Docker for Beginners – TechWorld with Nana", url: "https://youtu.be/3c-iBn73dDE", color: "#3A86FF" },
-  { step: 23, phase: "Phase 9", topic: "GitHub CI/CD", label: "GitHub Actions – TechWorld with Nana", url: "https://youtube.com/@TechWorldwithNana", color: "#3A86FF" },
-  { step: 24, phase: "Phase 9", topic: "DVC + MLflow", label: "DVC Tutorial – Krish Naik", url: "https://youtube.com/@krishnaik06", color: "#3A86FF" },
-  { step: 25, phase: "Phase 9", topic: "Cloud + Full MLOps", label: "MLOps Zoomcamp – DataTalks.Club", url: "https://github.com/DataTalksClub/mlops-zoomcamp", color: "#3A86FF" },
-  { step: 26, phase: "Phase 10", topic: "RAG + LangChain", label: "GenAI Part 2 – Sheryians", url: "https://youtube.com/playlist?list=PLaldQ9PzZd9oXR4PMGR4pr_DX4wFHkFwR", color: "#FF6B6B" },
-  { step: 27, phase: "Phase 10", topic: "Agents & Tool Calling", label: "GenAI Part 3 – Sheryians", url: "https://youtube.com/playlist?list=PLaldQ9PzZd9oXR4PMGR4pr_DX4wFHkFwR", color: "#FF6B6B" },
-  { step: 28, phase: "Phase 10", topic: "LangChain Deep Dive", label: "LangChain Full Course – CampusX", url: "https://youtube.com/@campusx-official", color: "#FF6B6B" },
-  { step: 29, phase: "Phase 10", topic: "Graph RAG", label: "Graph RAG – Microsoft Research", url: "https://youtube.com/@MicrosoftResearch", color: "#FF6B6B" },
-  { step: 30, phase: "Phase 11", topic: "Multimodal AI", label: "Multimodal AI – Andrej Karpathy", url: "https://youtube.com/@AndrejKarpathy", color: "#7B2FBE" },
-  { step: 31, phase: "Phase 12", topic: "Async Python", label: "Async Python – Tech With Tim", url: "https://youtu.be/t5Bo1Je9EmE", color: "#F4A261" },
-  { step: 32, phase: "Phase 13", topic: "MCP", label: "MCP Tutorial – Krish Naik", url: "https://youtube.com/@krishnaik06", color: "#2EC4B6" },
-  { step: 33, phase: "Phase 13", topic: "A2A Protocol", label: "Google ADK & A2A – Google Developers", url: "https://youtube.com/@GoogleDevelopers", color: "#2EC4B6" },
-];
+// Generate `allVideos` from `phases` so the video URLs always match the phase resources.
+const allVideos = (() => {
+  const videos = [];
+  let step = 1;
+  phases.forEach((phase) => {
+    phase.topics.forEach((topic) => {
+      topic.resources.forEach((res) => {
+        if (res.type === "video") {
+          videos.push({
+            step: step++,
+            phase: `Phase ${phase.id}`,
+            topic: topic.name,
+            label: res.label || res.name || topic.name,
+            url: res.url,
+            color: phase.color,
+          });
+        }
+      });
+    });
+  });
+  return videos;
+})();
 
 const projects = [
   {
