@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './App.css'
 
 const phases = [
   {
@@ -455,294 +456,6 @@ export default function App() {
 
   return (
     <div style={{ fontFamily: "'Georgia', 'Times New Roman', serif", background: "#0a0a0a", minHeight: "100vh", color: "#f0ede8" }}>
-      <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=JetBrains+Mono:wght@400;500&family=Crimson+Pro:ital,wght@0,300;0,400;1,300&display=swap');
-
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        
-        body { background: #0a0a0a; }
-
-        .hero {
-          position: relative;
-          padding: 80px 24px 60px;
-          text-align: center;
-          overflow: hidden;
-        }
-        .hero::before {
-          content: '';
-          position: absolute;
-          top: -100px; left: 50%; transform: translateX(-50%);
-          width: 600px; height: 600px;
-          background: radial-gradient(circle, rgba(247,37,133,0.12) 0%, transparent 70%);
-          pointer-events: none;
-        }
-        .hero-label {
-          font-family: 'JetBrains Mono', monospace;
-          font-size: 11px;
-          letter-spacing: 4px;
-          text-transform: uppercase;
-          color: #F72585;
-          margin-bottom: 20px;
-        }
-        .hero-title {
-          font-family: 'Playfair Display', serif;
-          font-size: clamp(36px, 7vw, 78px);
-          font-weight: 900;
-          line-height: 1.05;
-          color: #f0ede8;
-          margin-bottom: 16px;
-          letter-spacing: -1px;
-        }
-        .hero-title span {
-          color: #F72585;
-        }
-        .hero-subtitle {
-          font-family: 'Crimson Pro', serif;
-          font-style: italic;
-          font-size: 20px;
-          color: #8a8580;
-          max-width: 560px;
-          margin: 0 auto 40px;
-          line-height: 1.5;
-        }
-        .tab-bar {
-          display: flex;
-          justify-content: center;
-          gap: 4px;
-          margin-bottom: 60px;
-          background: rgba(255,255,255,0.04);
-          border: 1px solid rgba(255,255,255,0.08);
-          border-radius: 12px;
-          padding: 4px;
-          width: fit-content;
-          margin: 0 auto 60px;
-        }
-        .tab-btn {
-          font-family: 'JetBrains Mono', monospace;
-          font-size: 12px;
-          letter-spacing: 1px;
-          padding: 10px 24px;
-          border: none;
-          border-radius: 9px;
-          cursor: pointer;
-          transition: all 0.2s;
-          background: transparent;
-          color: #6b6560;
-        }
-        .tab-btn.active {
-          background: #F72585;
-          color: #fff;
-        }
-        .content { max-width: 900px; margin: 0 auto; padding: 0 20px 100px; }
-        
-        /* PHASE VIEW */
-        .phase-card {
-          border: 1px solid rgba(255,255,255,0.07);
-          border-radius: 16px;
-          margin-bottom: 16px;
-          overflow: hidden;
-          transition: border-color 0.2s;
-          background: rgba(255,255,255,0.02);
-        }
-        .phase-card:hover { border-color: rgba(255,255,255,0.14); }
-        .phase-header {
-          display: flex;
-          align-items: center;
-          gap: 16px;
-          padding: 22px 24px;
-          cursor: pointer;
-          user-select: none;
-        }
-        .phase-emoji {
-          font-size: 28px;
-          width: 52px; height: 52px;
-          display: flex; align-items: center; justify-content: center;
-          border-radius: 12px;
-          flex-shrink: 0;
-          font-family: 'Playfair Display', serif;
-          font-weight: 900;
-        }
-        .phase-meta { flex: 1; }
-        .phase-number {
-          font-family: 'JetBrains Mono', monospace;
-          font-size: 10px;
-          letter-spacing: 3px;
-          text-transform: uppercase;
-          color: #5a5550;
-          margin-bottom: 4px;
-        }
-        .phase-name {
-          font-family: 'Playfair Display', serif;
-          font-size: 20px;
-          font-weight: 700;
-          color: #f0ede8;
-        }
-        .phase-desc {
-          font-family: 'Crimson Pro', serif;
-          font-size: 15px;
-          color: #7a7570;
-          margin-top: 4px;
-          font-style: italic;
-        }
-        .phase-chevron {
-          font-size: 18px;
-          color: #5a5550;
-          transition: transform 0.25s;
-          flex-shrink: 0;
-        }
-        .phase-chevron.open { transform: rotate(180deg); color: #F72585; }
-        .phase-body {
-          padding: 0 24px 24px;
-          border-top: 1px solid rgba(255,255,255,0.05);
-        }
-        .topic-block { margin-top: 20px; }
-        .topic-name {
-          font-family: 'JetBrains Mono', monospace;
-          font-size: 12px;
-          letter-spacing: 1px;
-          color: #a0a098;
-          margin-bottom: 10px;
-          text-transform: uppercase;
-        }
-        .resource-row {
-          display: flex;
-          align-items: center;
-          gap: 10px;
-          padding: 10px 14px;
-          border-radius: 10px;
-          background: rgba(255,255,255,0.03);
-          border: 1px solid rgba(255,255,255,0.05);
-          margin-bottom: 6px;
-          transition: background 0.15s;
-        }
-        .resource-row:hover { background: rgba(255,255,255,0.06); }
-        .resource-badge {
-          font-family: 'JetBrains Mono', monospace;
-          font-size: 9px;
-          letter-spacing: 1.5px;
-          padding: 3px 7px;
-          border-radius: 5px;
-          flex-shrink: 0;
-          text-transform: uppercase;
-          font-weight: 500;
-        }
-        .badge-video { background: rgba(247,37,133,0.15); color: #F72585; border: 1px solid rgba(247,37,133,0.25); }
-        .badge-doc { background: rgba(58,134,255,0.15); color: #3A86FF; border: 1px solid rgba(58,134,255,0.25); }
-        .resource-link {
-          font-family: 'Crimson Pro', serif;
-          font-size: 16px;
-          color: #c0bdb8;
-          text-decoration: none;
-          flex: 1;
-          transition: color 0.15s;
-        }
-        .resource-link:hover { color: #f0ede8; }
-        .ext-icon {
-          font-size: 12px;
-          color: #4a4540;
-          flex-shrink: 0;
-        }
-
-        /* VIDEO VIEW */
-        .timeline { position: relative; padding-left: 32px; }
-        .timeline::before {
-          content: '';
-          position: absolute;
-          left: 11px; top: 0; bottom: 0;
-          width: 1px;
-          background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.12) 5%, rgba(255,255,255,0.12) 95%, transparent);
-        }
-        .video-item {
-          position: relative;
-          margin-bottom: 14px;
-          display: flex;
-          gap: 16px;
-          align-items: flex-start;
-        }
-        .video-dot {
-          position: absolute;
-          left: -32px;
-          top: 14px;
-          width: 10px; height: 10px;
-          border-radius: 50%;
-          border: 2px solid #0a0a0a;
-          flex-shrink: 0;
-        }
-        .video-step {
-          font-family: 'JetBrains Mono', monospace;
-          font-size: 11px;
-          color: #4a4540;
-          width: 28px;
-          flex-shrink: 0;
-          padding-top: 14px;
-        }
-        .video-card {
-          flex: 1;
-          padding: 14px 16px;
-          border-radius: 11px;
-          background: rgba(255,255,255,0.02);
-          border: 1px solid rgba(255,255,255,0.06);
-          transition: background 0.15s, border-color 0.15s;
-        }
-        .video-card:hover { background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1); }
-        .video-phase-tag {
-          font-family: 'JetBrains Mono', monospace;
-          font-size: 9px;
-          letter-spacing: 2px;
-          color: #5a5550;
-          text-transform: uppercase;
-          margin-bottom: 4px;
-        }
-        .video-topic {
-          font-family: 'Crimson Pro', serif;
-          font-size: 12px;
-          color: #6a6560;
-          font-style: italic;
-          margin-bottom: 4px;
-        }
-        .video-title-link {
-          font-family: 'Playfair Display', serif;
-          font-size: 16px;
-          color: #c8c5c0;
-          text-decoration: none;
-          font-weight: 400;
-          transition: color 0.15s;
-          display: block;
-        }
-        .video-title-link:hover { color: #f0ede8; }
-
-        .phase-group-label {
-          font-family: 'JetBrains Mono', monospace;
-          font-size: 10px;
-          letter-spacing: 3px;
-          text-transform: uppercase;
-          color: #5a5550;
-          margin: 32px 0 16px;
-          padding-left: 0;
-          display: flex;
-          align-items: center;
-          gap: 12px;
-        }
-        .phase-group-label::after {
-          content: '';
-          flex: 1;
-          height: 1px;
-          background: rgba(255,255,255,0.06);
-        }
-
-        .footer {
-          text-align: center;
-          padding: 40px 20px;
-          border-top: 1px solid rgba(255,255,255,0.06);
-        }
-        .footer-text {
-          font-family: 'Crimson Pro', serif;
-          font-style: italic;
-          font-size: 16px;
-          color: #4a4540;
-        }
-        .footer-text span { color: #F72585; }
-      `}</style>
 
       {/* Hero */}
       <div className="hero">
@@ -829,6 +542,33 @@ export default function App() {
 
       <div className="footer">
         <p className="footer-text">Built for those who want to go from zero to <span>demigod</span>. No shortcuts.</p>
+        <p className="footer-text">Built for those who want to go from zero to <span>demigod</span>. No shortcuts.</p>
+  
+        <div style={{ display: "flex", justifyContent: "center", gap: "12px", marginTop: "24px", flexWrap: "wrap" }}>
+          <a href="https://github.com/Joy-S-07" target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: "8px", padding: "10px 18px", borderRadius: "10px", background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", color: "#c0bdb8", textDecoration: "none", fontFamily: "'JetBrains Mono', monospace", fontSize: "13px", transition: "all 0.2s" }}
+            onMouseEnter={e => e.currentTarget.style.background = "rgba(255,255,255,0.1)"}
+            onMouseLeave={e => e.currentTarget.style.background = "rgba(255,255,255,0.05)"}>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            Joy-S-07
+          </a>
+
+          <a href="https://linkedin.com/in/beinggojo" target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: "8px", padding: "10px 18px", borderRadius: "10px", background: "rgba(10,102,194,0.12)", border: "1px solid rgba(10,102,194,0.3)", color: "#5b9bd5", textDecoration: "none", fontFamily: "'JetBrains Mono', monospace", fontSize: "13px", transition: "all 0.2s" }}
+            onMouseEnter={e => e.currentTarget.style.background = "rgba(10,102,194,0.22)"}
+            onMouseLeave={e => e.currentTarget.style.background = "rgba(10,102,194,0.12)"}>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            beinggojo
+          </a>
+
+          <a href="https://github.com/Joy-S-07/AI-Roadmap-With-Resources" target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: "8px", padding: "10px 18px", borderRadius: "10px", background: "rgba(247,37,133,0.1)", border: "1px solid rgba(247,37,133,0.3)", color: "#F72585", textDecoration: "none", fontFamily: "'JetBrains Mono', monospace", fontSize: "13px", transition: "all 0.2s" }}
+            onMouseEnter={e => e.currentTarget.style.background = "rgba(247,37,133,0.2)"}
+            onMouseLeave={e => e.currentTarget.style.background = "rgba(247,37,133,0.1)"}>
+            ⭐ Star & Contribute
+          </a>
+        </div>
+
+        <p style={{ fontFamily: "'Crimson Pro', serif", fontStyle: "italic", fontSize: "13px", color: "#3a3530", marginTop: "28px" }}>
+          Open to contributions — PRs welcome
+        </p>
       </div>
     </div>
   );
